@@ -1,0 +1,6 @@
+FROM openjdk:8-jre
+
+WORKDIR /usr/src/app
+COPY target/carts.jar ./app.jar
+
+ENTRYPOINT ["java","-jar","./app.jar", "--port=80"]
