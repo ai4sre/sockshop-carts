@@ -1,4 +1,4 @@
-FROM openjdk:jre-11-slim
+FROM openjdk:11-jre-slim
 
 WORKDIR /usr/src/app
 COPY target/carts.jar ./app.jar
