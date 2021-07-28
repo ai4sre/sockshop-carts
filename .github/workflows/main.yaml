@@ -56,6 +56,6 @@ jobs:
         with:
           push: true
           context: .
-          file: docker/carts/Dockerfile
+          file: docker/carts/Dockerfile.github
           tags: |
             ghcr.io/${{ github.repository }}:latest
