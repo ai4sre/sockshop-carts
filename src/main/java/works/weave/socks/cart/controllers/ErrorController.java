@@ -11,7 +11,7 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 public class ErrorController extends ResponseEntityExceptionHandler {
 
     @ExceptionHandler(IllegalArgumentException.class)
-	public ResponseEntity<Object> handleIllegalArgumentException(IllegalAccessException ex, WebRequest request) {
-		return super.handleExceptionInternal(ex, "handleIllegalArgumentException", null, HttpStatus.BAD_REQUEST, request);
-	}
+    public ResponseEntity<Object> handleIllegalArgumentException(IllegalArgumentException ex, WebRequest request) {
+        return super.handleExceptionInternal(ex, "handleIllegalArgumentException", null, HttpStatus.BAD_REQUEST, request);
+    }
 }
